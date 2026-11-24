@@ -33,6 +33,8 @@
 │   ├── partitions_16mb.csv  # 16MB flash 分区表（app 4MB + FS ~12MB）
 │   ├── platformio.ini
 │   └── README.md            # 固件详细文档（格式/协议/踩坑）
+├── hardware/                # 硬件改造方案
+│   └── multi_channel_square_mixing.md   # 方案B：多 GPIO 方波电阻混合（和弦）
 └── bizzz control/           # 网页控制台（纯前端，Web Bluetooth）
     ├── index.html           # 单文件控制台
     ├── serve.sh             # 本地起 http 服务
@@ -46,6 +48,9 @@
 | VCC    | 3V3      |
 | GND    | GND      |
 | IO     | GPIO15（低电平触发，无源） |
+
+> 想从"单音蜂鸣器"升级到"真和弦"，见 **[多 GPIO 方波电阻混合硬件方案](hardware/multi_channel_square_mixing.md)**：
+> 3 路 LEDC 方波经等值电阻求和（= 4 电平 DAC），再驱动蜂鸣器，零固件改动即可搭。
 
 ## 快速开始
 
