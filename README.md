@@ -73,7 +73,7 @@ cd "bizzz control"
 python3 -m http.server 8777     # 或 ./serve.sh
 ```
 
-用 **Chrome / Edge** 打开 <http://localhost:8777>，点「连接蓝牙」选 **BizzBuzzer**
+用 **Chrome / Edge** 打开 <http://localhost:8777>（或在线版 <https://cookie3319.github.io/bizzz-control/>），点「连接蓝牙」选 **BizzBuzzer**
 （Web Bluetooth 要求 secure context，所以必须 localhost 或 https；Safari 不支持）。
 
 详见 [`bizzz control/README.md`](bizzz%20control/README.md)（含完整 BLE 协议：UUID、
